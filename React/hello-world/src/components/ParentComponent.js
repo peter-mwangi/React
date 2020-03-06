@@ -6,21 +6,20 @@ class ParentComponent extends Component
     constructor(props)
     {
         super(props)
-
         this.state ={
-            parentName: "Parent"
+            message: "Parent"
         }
     }
 
-    greetParent = () =>{
-        alert(`Hello ${this.state.parentName}`)
-    }
+    greetParent = (childName) =>{
 
+        alert(`Hello ${this.state.message} from ${childName}`)
+    }
     render()
     {
         return(
             <div>
-                <ChildComponent greetHandler ={this.greetParent}/>
+            <ChildComponent greetHandler ={this.greetParent}/>
             </div>
         )
     }

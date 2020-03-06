@@ -10,6 +10,8 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreetings from './components/UserGreetings';
+import NameList from './components/NameList';
 
 class App extends Component
 {
@@ -17,36 +19,9 @@ class App extends Component
     {
         return(
            <div className="App">
-               {/* <Greet name="Peter Mwangi" heroName ="Mwanga">
-                   <p>Peter Mwangi is awesome, repeat till you get it.</p>
-               </Greet>
-               <Greet name="Ayatollah Khomeini" heroName ="Rohoullah">
-                   <button>Click Me</button>
-               </Greet>
-               <Greet name="Ayatollah Khamenei" heroName ="Sayyed">
-                   <a href ="#">This is a link</a>
-               </Greet>
 
-               <Welcome name ="Peter Mwangi" workOccupation ="Programmer"/>
-               <Welcome name ="Sharon Njuki" workOccupation ="Lawyer"/>
-               <Welcome name ="Anthony Gakugi" workOccupation ="Doctor"/>
-
-
-               <Hello name = "Peter"/>
-               <Hello name="Ali"/>
-               <Hello name="Khomeini"/> */}
-
-               {/* <Message /> */}
-
-               {/* <Counter /> */}
-
-               {/* <FunctionClick /> */}
-
-               {/* <ClassClick /> */}
-
-               {/* <EventBind /> */}
-
-               <ParentComponent />
+              {/* <UserGreetings /> */}
+              <NameList />
 
            </div>
         );

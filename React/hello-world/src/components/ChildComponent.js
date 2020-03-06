@@ -3,9 +3,7 @@ import React from 'react';
 function ChildComponent(props)
 {
     return(
-        <div className ="App">
-            <button onClick = {props.greetHandler}>Greet Parent</button>
-        </div>
+        <button onClick = {() => props.greetHandler('child')}>Click Me</button>
     )
 }
-export default ChildComponent;
+export default ChildComponent; 
