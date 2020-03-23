@@ -1,51 +1,56 @@
-import React from 'react';
-import Hello from './Hello';
+import React from "react";
+import Person from './Person';
 
 function NameList() {
 
-    const persons =
-     [
-        {
-            id: 1,
-            userId:2,
-            title: "Hello",
-            body: "Hey I'm reacting"
-        },
-        {
-            id: 2,
-            userId: 2,
-            title: "Welcome",
-            body: "congratulations "
-
-        },
-        {
-            id: 3,
-            userId: 2,
-            title: "Are you ok",
-            body: "Yeah, This is a total new experience" 
-        },
-        {
-            id: 4,
-            userId: 2,
-            title: "This is my county",
-            body: "Nyeri, where not looting is an offence"
-        },
-        {
-            id: 5,
-            userId: 2,
-            title: "Work Smart peter",
-            body: "Repeat till you get it."
-
-        },
-        {
-            id: 6,
-            userId: 2,
-            title: "Final Post",
-            body: "It was amazing seeing you here"
-        }
-    ];
-
-const personsList = persons.map(person =>)
-return<div>{personsList}</div>
+  const names =['Peter','Ivy','Sharon','Violet','Ivy'];
+const namesList=names.map((name, index)=><h2 key={index}>{index} {name}</h2>)
+  const persons = [
+    {
+      id: 1,
+      name: "Peter",
+      school: "Taita Taveta Uni",
+      email: "test@test.com"
+    },
+    {
+      id: 2,
+      name: "Anthony",
+      school: "Kenyatta Uni",
+      email: "hello@test.com"
+    },
+    {
+      id: 3,
+      name: "Daniel",
+      school: "Kisii Uni",
+      email: "test@kisii.com"
+    },
+    {
+      id: 4,
+      name: "Eugene",
+      school: "Daystar",
+      email: "info@test.com"
+    },
+    {
+      id: 5,
+      name: "Ann",
+      school: "JKUAT",
+      email: "jkuat@jkuat.com"
+    },
+    {
+      id: 6,
+      name: "Ivy",
+      school: "USIU",
+      email: "aguthi@kenya.com"
+    },
+    {
+      id: 7,
+      name: "Leah",
+      school: "KIST",
+      email: "test@t10.com"
+    }
+  ]
+  // const nameList = persons.map(person => <Person key= {person.id} person = {person}/>
+    // )
+  return <div>{namesList}</div>;
 }
 export default NameList;

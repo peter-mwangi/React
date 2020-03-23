@@ -12,6 +12,12 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreetings from './components/UserGreetings';
 import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css';
+import Form from './components/Form';
+import Form2 from './components/Form2';
 
 class App extends Component
 {
@@ -19,10 +25,7 @@ class App extends Component
     {
         return(
            <div className="App">
-
-              {/* <UserGreetings /> */}
-              <NameList />
-
+             <Form2 />
            </div>
         );
     }
